@@ -9,5 +9,5 @@ app.use('/health', (req: Request, res: Response, next: NextFunction) => {
   res.status(200).send({ status: ' 200', data: 'hello world' })
 })
 
-// eslint-disable-next-line
+// eslint-disable-next-line @typescript-eslint/no-confusing-void-expression, @typescript-eslint/restrict-template-expressions
 app.listen(port, () => console.log(`Server is listening on port ${port}`))
